@@ -25,7 +25,7 @@
 
 
   <title>Bimanual Grasp Synthesis for Dexterous Robot Hands</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -36,6 +36,8 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -56,12 +58,12 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Yanming Shao</a><sup></sup>,</span>
+                <a href="https://scholar.google.com/citations?user=gHy232gAAAAJ" target="_blank">Yanming Shao</a><sup></sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Chenxi Xiao</a><sup>*</sup>,</span>
+                  <a href="https://scholar.google.com/citations?user=Qhiy3doAAAAJ" target="_blank">Chenxi Xiao</a><sup>*</sup>,</span>
                   </div>
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">ShanghaiTech University<br>RA-L | Transferred to ICRA 25</span>
+                    <span class="author-block">ShanghaiTech University<br>RA-L 24' | Transferred to ICRA 25' </span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Author</small></span>
                   </div>
 
@@ -96,7 +98,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Dataset</span>
+                    <span>Dataset & Visualization</span>
                   </a>
                 </span>
 
@@ -110,15 +112,15 @@
 </section>
 
 
+<br>
 
 
 
 
-<!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Teaser Figure</h2>
         <img src="static/images/teaser.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Bimanual manipulation is necessary for handling large and heavy objects (e.g., basins, kitchen appliances). These
@@ -127,8 +129,8 @@ objects would otherwise be difficult to handle using single-handed manipulation 
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
+<br>
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -147,11 +149,12 @@ objects would otherwise be difficult to handle using single-handed manipulation 
 <!-- End paper abstract -->
 
 
-
+<br>
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <h2 class="title is-3">Pipeline</h2>
         <img src="static/images/sys.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Our pipeline for synthesizing stable bimanual grasps, which includes: (A) generating grasp poses by initializing the bimanual grasp poses around the objects and then improving their quality through optimization; (B) verifying the grasp poses based on shape penetration and physics simulation using Isaac Gym; (C) utilizing the verified grasps (BimanGrasp-Dataset) to train a generative model (BimanGrasp-DDPM), with post-processing techniques to remove penetrations.
@@ -160,7 +163,71 @@ objects would otherwise be difficult to handle using single-handed manipulation 
   </div>
 </section>
 
+<br>
 
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Qualitative results 1: Geometric Primitives</strong></h2>
+        <hr style="margin-top:0px">
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="images/vis_objects.png" alt="input" class="img-responsive graph" width="100%"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Qualitative results 2: Daily Objects</strong></h2>
+        <hr style="margin-top:0px">
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="images/daily_objects.png" alt="input" class="img-responsive graph" width="100%"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Qualitative results 3: Objects from GSO Dataset.</strong></h2>
+        <hr style="margin-top:0px">
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="images/unseen_vis_gso.png" alt="input" class="img-responsive graph" width="100%"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Objects from DDG, YCB, and ContactDB.</strong></h2>
+        <hr style="margin-top:0px">
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="images/unseen_vis_others.png" alt="input" class="img-responsive graph" width="100%"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
