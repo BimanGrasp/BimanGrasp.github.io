@@ -267,40 +267,89 @@ objects would otherwise be difficult to handle using single-handed manipulation 
 <br>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizontal Layout</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex; /* 使用Flexbox布局 */
-            flex-direction: row; /* 横向排列 */
-            justify-content: space-around; /* 均匀分布 */
-            align-items: flex-start; /* 顶部对齐 */
-            margin: 0;
-            padding: 20px;
-        }
-        iframe {
-            border: 1px solid #ccc;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            width: 100%;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <iframe src="static/3d_vis/BIA_Cordon_Bleu_White_Porcelain_Utensil_Holder_900028_1_chart.html" width="500px" height="500px"></iframe>
-    <iframe src="static/3d_vis/Office_Depot_Canon_PGI35_Remanufactured_Ink_Cartridge_Black_1_chart.html" width="500px" height="500px"></iframe>
-    <iframe src="static/3d_vis/MK7_1_chart.html" width="500px" height="500px"></iframe>
-</body>
-</html>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container"> 
+      <h2 class="title is-3"><strong>Qualitative results 5: 3D Visualizations (6 instances).</strong></h2>
+      <hr style="margin-top:0px">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="grid-container">
+          <iframe src="static/3d_vis/1.html" width="1100px" height="1100px"></iframe>
+        </div>
+        <div class="grid-container">
+          <iframe src="static/3d_vis/2.html" width="1100px" height="1100px"></iframe>
+        </div>
+        <div class="grid-container">
+          <iframe src="static/3d_vis/3.html" width="1100px" height="1100px"></iframe>
+        </div>
+        <div class="grid-container">
+          <iframe src="static/3d_vis/4.html" width="1100px" height="1100px"></iframe>
+        </div>
+        <div class="grid-container">
+          <iframe src="static/3d_vis/5.html" width="1100px" height="1100px"></iframe>
+        </div>
+        <div class="grid-container">
+          <iframe src="static/3d_vis/6.html" width="1100px" height="1100px"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* 设置父元素居中 */
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* 可选，设置 iframe 之间的间距 */
+  }
+
+  /* 确保 iframe 不会超出父容器 */
+  iframe {
+    max-width: 100%;
+    max-height: 100%;
+  }
+</style>
 
 <br>
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title is-3"><strong>Quantitive results 1: The average grasp success rate of bimanual grasping and unimanual grasping.</strong></h2>
+        <hr style="margin-top:0px">
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="static/images/bim.png" alt="input" class="img-responsive graph" width="80%" style="margin: 0 auto;"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title is-3"><strong>Quantitive results 2: Success rate (%) of BimanGrasp in IsaacGym under different friction coefficient settings. Object density is
+          at ρ = 2500 kg · m−3</strong></h2>
+        <hr style="margin-top:0px">
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="static/images/friction.png" alt="input" class="img-responsive graph" width="80%" style="margin: 0 auto;"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
@@ -319,9 +368,6 @@ objects would otherwise be difficult to handle using single-handed manipulation 
     </div>
 </section>
 <!--End BibTex citation -->
-
-
-
 
   </body>
   </html>
